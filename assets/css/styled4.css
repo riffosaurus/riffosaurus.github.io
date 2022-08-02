@@ -1,0 +1,45 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fondo-verde {
+    background-color: #28a745;
+}
+
+.color-verde {
+    color: #28a745;
+}
+
+.texto-gris {
+    color: #707070;
+}
+
+.texto-titulo {
+    font-weight: 200;
+    font-size: 1.3em;
+}
+
+.texto-descripcion {
+    font-weight: 200;
+    color: #707070;
+}
+
+.texto-direccion {
+    font-weight: 200;
+    color: #707070;
+    font-size: 0.9em;
+}
+
+.texto-precio {
+    font-weight: 200;
+    color: #707070;
+}
+
+.texto-descuento {
+    color: #28a745;
+    font-size: 1.3em;
+}
+
+.texto-formulario {
+    font-size: 1.9em;
+}
