@@ -1,118 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Sebastian VP</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
-        integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/estilos.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/3edbee4f93.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!--stylesheet-->
+    <link rel="stylesheet" href="assets/css/styleresume.css">
+    <title>CV - Sebastián Vega</title>
+
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <!--<img src="assets/img/logo.png" class="img-fluid">-->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid px-5">
+            <a class="navbar-brand text-white" href="index.html">
+                <h2>SRVP</h2>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Acerca de mi</a>
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Acerca de mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="vitrina_desafios.html">Trabajos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link text-white-50" href="vitrina_desafios.html">Proyectos Web</a>
                     </li>
 
                 </ul>
 
             </div>
         </div>
-    </nav>
 
-    <header id="Hero-Section" class="text-light text-end py-5 mt-5">
-        <div class="container">
-            <div class="ms-auto col-12 col-md-7 ">
-                <h1 class="display-1 fw-bold my-5">
-                    Sebastián <br> Vega
-                </h1>
-                <p class="my-5">
-                    Periodista, técnico en sonido y desarrollador Front-End en formación...
-                </p>
-                <div class="mb-5 pb-5">
-                    <button class="btn btn-lg btn-outline-info text-light me-4">Trabajos</button>
-                    <button class="btn btn-lg btn-info text-light">Contacto</button>
+    </nav>
+</header>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <!--Cards-->
+    <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-5 px-4 gy-4 py-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/captura_desafio1.png" class="card-img-top" alt="plumon de cama">
+                    <div class="card-body">
+                        <h5 class="card-title texto-titulo">Desafío 1
+                        </h5>
+                        <p class="card-text texto-descripcion">CV en HTML5. <br><span
+                                class=" text texto-direccion"><i class="fa-solid fa-location-dot"></i> </span> </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a class="btn btn-outline-primary" href="desafio1.html" role="button">Visitar página</a>
+                        <a class="btn btn-outline-primary" href="https://github.com/riffosaurus/frontend-desafio1" role="button">Ir a repositorio</a>
+                    </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/captura_desafio2.png" class="card-img-top" alt="ensalada">
+                    <div class="card-body">
+                        <h5 class="card-title texto-titulo">Desafío 2</h5>
+                        <p class="card-text texto-descripcion">Artículos en tabla. HTML5 y CSS3.<br><span class=" text texto-direccion"><i
+                                    class="fa-solid fa-location-dot "></i></p>
+                        </p>
+
+
+                    </div>
+                    <div class="card-footer text-end">
+                        <a class="btn btn-outline-primary" href="desafio2.html" role="button">Visitar página</a>
+                        <a class="btn btn-outline-primary" href="https://github.com/riffosaurus/frontend-desafio2" role="button">Ir a repositorio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/captura_desafio3.png" class="card-img-top" alt="silla de dentista">
+                    <div class="card-body">
+                        <h5 class="card-title texto-titulo">Desafío 3
+                        </h5>
+                        <p class="card-text texto-descripcion">Iguana Page. Posicionamiento con HTML5 y CSS3.<br><span
+                                class=" text texto-direccion"><i class="fa-solid fa-location-dot ">
+                                </i></p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a class="btn btn-outline-primary" href="desafio3.html" role="button">Visitar página</a>
+                        <a class="btn btn-outline-primary" href="https://github.com/riffosaurus/frontend-desafio3" role="button">Ir a repositorio</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="assets/img/captura_desafio4.png" class="card-img-top" alt="garbanzos">
+                    <div class="card-body">
+                        <h5 class="card-title texto-titulo">Desafío 4</h5>
+                        <p class="card-text texto-descripcion">Página Web "Cuppon" responsive.<br><span
+                                class=" text texto-direccion"><i class="fa-solid fa-location-dot ">
+                                </i></p>
+                    </div>
+
+                    <div class="card-footer text-end">
+                        <a class="btn btn-outline-primary" href="desafio4.html" role="button">Visitar página</a>
+                        <a class="btn btn-outline-primary" href="https://github.com/riffosaurus/frontend-desafio4" role="button">Ir a repositorio</a>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </header>
-
-
-    
+    </div>
 
 
 
 
-    <section id="Contacto" class="container my-5">
-
-        <h2 class="display-4 fw-bold text-center my-4">Contáctame</h2>
-
-        <p class="text-center my-4 d-none d-md-block">¿Algúna duda, o comentario que desee hacerme llegar? Sientase libre de contactarme.</p>
-
-        <form>
 
 
-            <div class="form-group mb-4">
-                <label class="mb-2">Nombre</label>
-                <input class="form-control" placeholder="Nombre">
-            </div>
-
-            <div class="form-group mb-4">
-                <label class="mb-2">Correo electrónico</label>
-                <input class="form-control" placeholder="Correo electrónico" />
-            </div>
-
-
-            <div class="form-group">
-                <label class="mb-2">Mensaje</label>
-                <textarea class="form-control" placeholder="Escribe aquí tu mensaje"></textarea>
-            </div>
-
-            <div class="my-3 text-end">
-                <button class="btn btn-info text-light">Enviar</button>
-            </div>
-
-
-
-        </form>
-
-    </section>
-
-
-
-    <footer class="bg-dark text-center text-light p-4">
-        <p class="mb-0">Sebastian Vega 2022. Todos los derechos reservados.</p>
-    </footer>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
 </body>
+
+<footer class="mt-auto">
+    <div class="container-fluid text-white text-center bg-dark py-3 texto-footer">
+        
+        <a href="https://github.com/riffosaurus"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sebastianvegaperry/"><i class="fa-brands fa-linkedin"></i></a>
+</footer>
 
 </html>

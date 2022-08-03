@@ -1,0 +1,12 @@
+.foto {
+    border: 0.5px;
+    border-radius: 25%;
+}
+
+.texto-footer {
+    font-size: 2em;
+}
+
+footer a {
+    color: white;
+}
